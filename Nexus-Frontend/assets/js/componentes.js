@@ -7,5 +7,6 @@ async function cargarComponentes(id, file) {
     } catch (error) {
         console.error(error);
     }
+    
 
 }
