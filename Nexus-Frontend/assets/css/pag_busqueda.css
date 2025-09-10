@@ -1,93 +1,81 @@
 @import url(fuentes.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    height: 70px;
-    width: 100%;
-   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  padding: 0 20px; /* espacio a los lados */
 }
 
-form {
-    background-color: white;
-    width: 65%;
-    max-width: 600px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    margin-top: 5px;
-
-}
-
-form input {
-    font-size: 18px;
-    flex: 1;
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-}
-
-.search-barr {
-    background-color: #F55865;
-    border: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    border-radius : 8px;
-}
-
-.icon-user {
-    background-color: #F55865;
-    border: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-top: 5px;
-    border-radius : 8px;
-}
-
-.notification {
-    background-color: #F55865;
-    border: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-top: 5px;
-    border-radius : 8px;
-}
-
-.inicio {
-    color: white;
-    margin-top: 20px;
-    margin-right: 10px;
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    margin-right: 1060px;
-    
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre logo y título */
 }
 
 .logo {
-    background-color: transparent;
-    border: 0;
-    width: 50px;
-    height: 70px;
-    border-radius: 0;
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-   
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.inicio {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+form {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+form input {
+  font-size: 16px;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-barr {
+  background-color: #F55865;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification,
+.icon-user {
+  background-color: #F55865;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
 }
