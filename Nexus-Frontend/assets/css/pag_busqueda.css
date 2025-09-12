@@ -10,7 +10,8 @@
 /* ====== Escritorio ====== */
 .container {
   display: flex;
-  flex-direction: row;   /* En PC en fila */
+  flex-direction: row;
+  /* En PC en fila */
   align-items: center;
   background-color: black;
   padding: 10px 20px;
@@ -80,10 +81,51 @@ form input {
   color: white;
 }
 
+/*barra de navegación*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 70vh;
+  width: 300px;
+  position: fixed;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: white;
+
+
+}
+
+.ico {
+  display: flex;
+
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: #F55865;
+    padding: 2%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+
+}
+
 /* ====== Celular ====== */
 @media (width < 700px) {
   .container {
-    flex-direction: column;   /* apila todo */
+    flex-direction: column;
+    /* apila todo */
     align-items: stretch;
     gap: 10px;
   }
@@ -102,7 +144,8 @@ form input {
   }
 
   .right {
-    justify-content: center;  /* botones centrados */
+    justify-content: center;
+    /* botones centrados */
     width: 100%;
   }
 }
