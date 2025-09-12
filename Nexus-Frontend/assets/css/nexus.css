@@ -7,6 +7,66 @@ body {
   scroll-behavior: smooth; /* Animación suave al hacer scroll */
 }
 
+
+/* Barra negra de arriba */
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 15px 1px;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0; /* Esto es para centrar la barra por el fixed */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    flex-wrap:wrap;
+    
+    
+}
+
+/* Logo Nexus */
+.logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Nombre Nexus */
+.inicio {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Acomodar el logo y el nombre */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Acomodar los botones registro y iniciar sesion*/
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+/* Crear la cajita para los botones de right */
+.registro,
+.iniciar-sesion {
+    background-color: black;
+    border: solid 2px;
+    width: 60px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    margin: 0; /* Esto es para que la pantalla no se coma los botones */
+    padding: 0;
+}
+
 .contenedor_evento {
     display: flex;
     width: 100vw;
@@ -203,4 +263,14 @@ body {
 }
 
 
+@media (max-width: 700px) {
+   .container {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
 
+  .right {
+    margin-top: 10px;
+    align-self: center;
+  }
+}
