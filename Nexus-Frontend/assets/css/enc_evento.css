@@ -126,3 +126,13 @@ ul{
     list-style: none;
 }
 
+.navegacion{
+    display: flex;
+}
+
+.eventos_interfaz ul,
+.foros_interfaz ul{
+    list-style:none;
+    margin: 0;
+    pad: 0;
+}
