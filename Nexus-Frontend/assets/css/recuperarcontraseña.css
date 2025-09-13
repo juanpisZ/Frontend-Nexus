@@ -57,14 +57,14 @@ input {
 
 
 .btn.cancel {
-  background: #333;
+  background: #F55865;
 }
 
 .btn.verify {
-  background: #007BFF;
+  background: #F55865;
+}
+.btn:hover {
+  background: #ff0202;
 }
 
 
-.btn:active {
-  opacity: 0.8;
-}
