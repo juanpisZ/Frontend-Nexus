@@ -1,5 +1,7 @@
 
-    body {
+ 
+ @import url(fuentes.css);
+ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -8,6 +10,10 @@
   height: 100vh;
   background: #ffffff;
 }
+*{
+  text-decoration: none;
+}
+
 
 
 h1 {
@@ -17,7 +23,8 @@ h1 {
 
 
 .avatar {
-  font-size: 70px;
+  
+
   margin-bottom: 20px;
 }
 
@@ -58,12 +65,16 @@ input {
 }
 
 
-a {
+.botones a {
+  font-family: 'Roboto', sans-serif;
   display: block;
   margin: 10px 0;
   color: #000000;
   text-decoration: none;
+  &:hover{
+  background-color: #d80202;
 }
+
 .Olvide{
   font-size: small;
 }
