@@ -1,0 +1,70 @@
+
+    
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.lock {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.btn {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.btn.cancel {
+  background: #333;
+}
+
+.btn.verify {
+  background: #007BFF;
+}
+
+
+.btn:active {
+  opacity: 0.8;
+}
