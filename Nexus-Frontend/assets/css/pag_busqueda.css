@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  color: black;
+}
+h2{
+ 
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* ====== Escritorio ====== */
@@ -120,6 +126,15 @@ a {
 
 
 }
+
+.contenedor-lista-evento{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0;
+  gap: 0 10px;
+}
+
 
 /* ====== Celular ====== */
 @media (width < 700px) {
