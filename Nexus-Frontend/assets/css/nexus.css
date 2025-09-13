@@ -73,7 +73,7 @@ body {
     background-color: #ddd;
     height: 100vh;
     justify-content:space-around;
-
+    
 
 }
 
@@ -88,7 +88,7 @@ body {
 .titulo{
     display: flex;
     justify-content: center;
-
+    padding-top: 10vh;
 }
 
 .section_eventos {
