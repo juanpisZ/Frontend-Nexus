@@ -4,177 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/pag_busqueda.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
+  <title>Nexus</title>
 </head>
 
 <body>
-  <header class="container">
-    <!-- Logo y título -->
-    <div class="left">
-      <button class="logo">
-        <img src="assets/img/Nexus logo.png" alt="nexus logo" height="50px">
-      </button>
-      <h1 class="inicio">NEXUS</h1>
+
+  <header>
+    <div class="header-left">
+      <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo" class="logo" width="30" height="30">
+      <h1 id="titulo">Nexus</h1>
     </div>
 
-    <!-- Buscador -->
-    <form>
-      <input type="text" placeholder="Buscar...">
-      <button class="search-barr"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+    <div class="header-center">
+      <div class="buscador">
+        <input type="text" placeholder="Buscar...">
+      </div>
+    </div>
 
-    <!-- Botones derecha -->
-    <div class="right">
-      <button class="notification"><i class="fa-solid fa-bell"></i></button>
-      <button class="icon-user"><i class="fa-regular fa-circle-user"></i></button>
+    <div class="header-right">
+      <img src="assets/img/mensaje.png" alt="Notificación" class="notificacion_icon">
+      <img src="assets/img/IconosMenuLateral/user.png" alt="Perfil" class="perfil_icon">
     </div>
   </header>
-  <!--Barra de navegación -->
 
- 
 
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#">
-            <div class="contenedor-lista-evento">
-              <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/dashboard-alt.png" alt="" width="30px ">
-              <div class="text">Dashboard</div>
-            </div>
+  <aside>
+    <Div class="menu-lateral">
 
-              
-            </div>          
-
-            
-          </a></li>
-      </ul>
-
-      <h2>Eventos</h2>
-      <ul class="lista">
-
-        <li>
-          <a href="#">
-             <div class="contenedor-lista-evento">
-              <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/target.png" alt="" width="30px ">
-             </div>
-             <div class="text">Crear Evento</div>
-             </div>
-            
-          </a>
-        </li>
-        <li><a href="#">
-
-          <div class="contenedor-lista-evento">
-              <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/calendar-alt.png" alt="" width="30px ">
-            </div>
-            <div class="text">Mis Eventos</div>
-          </div>
-          
-          </div>
-          
-
-          
-          </a></li>
-           
-
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-              <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/pen-minus.png" alt="" width="30px ">
-            </div>
-            <div class="text">Inscritos</div>
-          </div>
-          
-          </a></li>
-        <li><a href="#">
-          <div class="contenedor-lista-evento"> 
-             <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/chevrons-left.png" alt="" width="30px ">
-            </div>
-            <div class="text">Eventos Pasados</div>
-          </div>
-           
-          </a></li>
-      </ul>
-
-      <h2>Foros</h2>
-      <ul class="lista">
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-           <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Evento/home-alt-2.png" alt="" width="30px ">
-            </div>
-            <div class="text">Mis Foros</div>
-          </div>
-           
-          </a></li>
-        <li><a href="#">
-           <div class="contenedor-lista-evento">
-            <div class="ico">
-            <img src="assets/img/IconosMenuLateral/Foro/ticket-star.png" alt="" width="30px ">
-            </div>
-            <div class="text">Inscritos</div>
-           </div>
-         
-          </a></li>
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-               <div class="ico">
-              <img src="assets/img/IconosMenuLateral/Foro/folder-star.png" alt="" width="30px ">
-            </div>
-            <div class="text">Foros Pasados</div>
-          </div>
-          </a></li>
-      </ul>
-
-      <h2>Amigos</h2>
-
-      <ul class="lista">
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-           <div class="ico">
-              <img src="assets/img/IconosMenuLateral/user.png" alt="" width="30px ">
-            </div>
-            <div class="text">Mis Amigos</div>
-          </div>
-          </a></li>
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-             <div class="ico">
-              <img src="assets/img/IconosMenuLateral/user-voice.png" alt="" width="30px ">
-            </div>
-            <div class="text">Solicitudes Enviadas</div>
-          </div>
-           
-          </a></li>
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-            <div class="ico">
-              <img src="assets/img/IconosMenuLateral/us" alt="" width="30px ">
-            </div>
-            <div class="text">Solicitudes Recibidas</div>
-          </div>
-            
-          </a></li>
-      </ul>
+      <header class="menu-header">
+        <h3>Nombre de Usuario</h3>
+      </header>
 
       <ul>
-        <li><a href="#">
-          <div class="contenedor-lista-evento">
-            <div class="ico">
-              <img src="assets/img/IconosMenuLateral/user-circle.png" alt="" width="30px ">
-            </div>
-            <div class="text">Perfil</div>
-          </div>
-           
-          </a></li>
+        <li><a href="">Dashboard</a></li>
+        <li><a href="">Perfil</a></li>
+        <li><a href="">Crear Evento</a></li>
+        <li><a href="">Mis Eventos</a></li>
+        <li><a href="">Invitaciones</a></li>
+        <li><a href="">Eventos Asistidos</a></li>
+        <li><a href="">Mis Foros</a></li>
+        <li><a href="">Crear Foro</a></li>
       </ul>
-    </nav>
-  
+    </Div>
+  </aside>
+
+
 </body>
 
 </html>
