@@ -10,8 +10,16 @@ body {
     color: #333;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 /* HEADER */
 .header-top {
+    position: sticky;
+    top: 0;
     background-color: #111827;
     color: #fff;
     display: flex;
@@ -27,14 +35,14 @@ body {
 }
 
 .header-left .logo {
-    height: 55px;
+    height: 40px;
     width: auto;
     cursor: pointer;
 }
 
 #titulo {
     font-family: sans-serif, Arial, Helvetica;
-    font-size: 2.1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     font-style: italic;
 }
@@ -67,37 +75,37 @@ body {
 .section-box h2 {
     padding-bottom: 80px;
     color: #111827;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-style: italic;
 }
 
 .section-box article {
     max-width: 700px;
     margin: 0 auto 20px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #000000;
 }
 
 /* BOTONES  */
-.botones {
-    display: flex;
+.botones a {
+    display: inline-block;
     justify-content: center;
-    gap: 20px;
+
+    gap: 40px;
     margin-bottom: 20px;
-}
-
-button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    background-color: #1a1a1a;
+    background-color: #111827;
+    background-repeat: no-repeat;
     color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 25px;
     transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
 }
 
-button:hover {
+
+
+.botones a:hover {
     background-color: #8B5CF6;
     transform: scale(1.05);
 }
@@ -123,10 +131,11 @@ button:hover {
 .contenedor_evento img,
 .contenedor_foro img,
 .contenedor_califica img {
-    width: 580px;
+    width: 380px;
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px;
 }
 
 
@@ -135,6 +144,8 @@ footer {
     color: #fff;
     text-align: center;
     margin-top: auto;
+    position: relative;
+    z-index: 5;
 }
 
 .footer p {
@@ -167,7 +178,7 @@ footer {
 }
 
 /* === RESPONSIVE === */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
     .contenedor_evento,
     .contenedor_foro,
@@ -180,4 +191,47 @@ footer {
     .contenedor_foro {
         flex-direction: row-reverse;
     }
+
+    footer {
+        padding-top: 10px;
+    }
+
+    .contenedor_evento img,
+    .contenedor_foro img,
+    .contenedor_califica img {
+        width: 540px;
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        margin: 20px;
+    }
+
+    .section-box h2 {
+        padding-bottom: 80px;
+        color: #111827;
+        font-size: 3.5rem;
+        font-style: italic;
+    }
+
+    .section-box article {
+        max-width: 700px;
+        margin: 0 auto 20px;
+        font-size: 2.5rem;
+        color: #000000;
+    }
+
+    .header-left .logo {
+        height: 55px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    #titulo {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 2.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
 }
