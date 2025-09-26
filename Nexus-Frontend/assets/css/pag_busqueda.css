@@ -14,9 +14,17 @@ li {
 body {
 
   background-color: #F3F4F6;
+  z-index: -2;
+
 }
 
-header {
+main {
+  flex: 1;
+}
+
+.header-top {
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,6 +32,7 @@ header {
   background-color: #111827;
   padding: 0 20px;
   height: 10vh;
+  z-index: 10;
 }
 
 /* Izquierda */
@@ -35,7 +44,7 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
   width: auto;
 }
 
@@ -45,8 +54,6 @@ header {
   /* Ocupa espacio para centrar */
   display: flex;
   justify-content: center;
-
-
 }
 
 .buscador {
@@ -69,38 +76,42 @@ header {
 }
 
 /* Derecha */
-.header-right {
-  display: flex;
+.header-right a {
   align-items: center;
   gap: 35px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
+  margin: 10px;
+
+  &:hover {
+    color: #8B5CF6;
+  }
 }
 
-.header-right i:hover {
-  color: #8B5CF6;
-  scale: 1.1;
-}
 
 
 #titulo {
   font-family: sans-serif, Arial, Helvetica;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-style: italic;
   font-weight: bolder;
 }
 
+
+
+
+
 /*menu lateral*/
-
-.ico {}
-
 #sidebar {
-  width: 25%;
+  position: fixed;
+  top: 6%;
+  width: 20vw;
   height: 100vh;
   background-color: #FFFFFF;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2%;
+  margin-left: 0;
   padding: 20px;
-  margin-top: 10px;
 }
 
 .menu-lateral ul {
@@ -124,7 +135,6 @@ header {
 
 li a:hover {
   color: #a480f7;
-
   text-decoration: none;
   display: block;
 }
@@ -185,8 +195,14 @@ h3 {
 /* Tarjetas de eventos*/
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 40vw;
   margin-top: 10px;
+  margin-left: 20vw;
+  margin-right: 10vw;
+  width: auto;
+  height: auto;
+
 }
 
 .cards-container {
@@ -246,8 +262,10 @@ h3 {
 footer {
   background: #111827;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  margin-top: auto;
+  position: relative;
+  z-index: 5;
 }
 
 .footer p {
@@ -276,4 +294,50 @@ footer {
 
 .social-icons a:hover {
   color: #b018ec;
+}
+
+
+
+@media(max-width: 920px) {
+  #sidebar h3 {
+    display: none;
+  }
+
+  #sidebar .texto {
+    display: none;
+  }
+
+  #sidebar {
+    width: auto;
+  }
+
+  #sidebar li a:hover {
+    scale: 1.1;
+  }
+
+  #titulo {
+    font-size: 2.0rem;
+  }
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .header-right a {
+    align-items: center;
+    gap: 35px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 10px;
+
+    &:hover {
+      color: #8B5CF6;
+    }
+  }
+
+  .buscador {
+    width: 70%;
+    justify-content: center;
+  }
 }

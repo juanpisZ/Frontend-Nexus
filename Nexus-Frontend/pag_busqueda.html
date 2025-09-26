@@ -12,7 +12,7 @@
 
 <body>
 
-  <header>
+  <header class="header-top">
     <div class="header-left">
       <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo Nexus" class="logo" width="50" height="50">
       <h1 id="titulo">Nexus</h1>
@@ -27,122 +27,133 @@
 
     <div class="header-right">
       <!-- Icono de campana -->
-      <i class="fa-solid fa-bell"></i>
+      <a href=""><i class="fa-solid fa-bell"></i></a>
       <!-- Icono de usuario -->
-      <i class="fa-solid fa-user"></i>
+      <a href="perfil_usuario.html"><i class="fa-solid fa-user"></i></a>
     </div>
   </header>
 
-  <div class="container">
-    <!-- Menú lateral -->
-    <aside id="sidebar">
-      <div class="menu-lateral">
 
-        <div class="menu-header">
-          <h3>Nombre de Usuario</h3>
-        </div>
+  <main>
 
-        <nav>
-          <ul>
-            <li><a href=""><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
-            <li><a href=""><i class="fa-solid fa-user"></i> Perfil</a></li>
-            <li><a href=""><i class="fa-solid fa-plus"></i> Crear Evento</a></li>
-            <li><a href=""><i class="fa-solid fa-calendar-days"></i> Mis Eventos</a></li>
-            <li><a href=""><i class="fa-solid fa-plus"></i> Invitaciones</a></li>
-            <li><a href=""><i class="fa-solid fa-check-double"></i> Eventos Asistidos</a></li>
-            <li><a href=""><i class="fa-solid fa-users"></i> Mis Foros</a></li>
-            <li><a href=""><i class="fa-solid fa-comments"></i> Crear Foro</a></li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-    <!-- header de sección -->
-    <section class="main-content">
-      <header id="header-seccion">
-        <nav class="nav-seccion">
-          <ul>
-            <li><a href="" class="nav">Eventos</a></li>
-            <li><a href="" class="nav">Foros</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- Contenido principal -->
-      <div class="cards-container">
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/juego_mesa.webp" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Juegos de Mesa</h3>
-            <p>Comparte con más gente </p>
-            <button>Ver más</button>
-          </div>
-        </div>
+    <div class="container">
 
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/futbol.jpg" alt="Imagen evento">
-          <div class="card-body">
-            <h3>¿Que tal un partido?</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
-          </div>
-        </div>
 
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/musica.jpg" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Musica para todos</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
-          </div>
-        </div>
+      <!-- Menú lateral -->
+      <aside id="sidebar">
+        <div class="menu-lateral">
 
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/tenis.png" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Tenis en el parque</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/videojuegos.jpg" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Warzone en la noche</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/baile.webp" alt="Imagen evento">
-          <div class="card-body">
-            <h3>A mover los pies</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
+          <div class="menu-header">
+            <h3>Nombre de Usuario</h3>
           </div>
 
+          <nav>
+            <ul>
+              <li><a href=""><i class="fa-solid fa-gauge"></i> <span class="texto">Dashboard </span></a></li>
+              <li><a href="perfil_usuario.html"><i class="fa-solid fa-user"></i> <span class="texto">Perfil </span></a>
+              </li>
+              <li><a href=""><i class="fa-solid fa-plus"></i><span class="texto">Crear Evento </span></a></li>
+              <li><a href=""><i class="fa-solid fa-calendar-days"></i> <span class="texto">Mis Eventos </span></a></li>
+              <li><a href=""><i class="fa-solid fa-plus"></i> <span class="texto">Invitaciones </span></a></li>
+              <li><a href=""><i class="fa-solid fa-check-double"></i><span class="texto">Eventos Asistidos </span> </a>
+              </li>
+              <li><a href=""><i class="fa-solid fa-users"></i><span class="texto">Mis Foros </span></a></li>
+              <li><a href=""><i class="fa-solid fa-comments"></i> <span class="texto">Crear Foro </span></a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/anime.jpg" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Capitulos</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
+      </aside>
+
+
+      <!-- header de sección -->
+      <section class="main-content">
+        <header id="header-seccion">
+          <nav class="nav-seccion">
+            <ul>
+              <li><a href="" class="nav">Eventos</a></li>
+              <li><a href="" class="nav">Foros</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <div class="cards-container">
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/juego_mesa.webp" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Juegos de Mesa</h3>
+              <p>Comparte con más gente </p>
+              <button>Ver más</button>
+            </div>
           </div>
 
-        </div>
-        <div class="card">
-          <img src="assets/img/Imagenes_Ejem/leer.jpg" alt="Imagen evento">
-          <div class="card-body">
-            <h3>Unete al clud de lectura</h3>
-            <p>Descripción corta del evento.</p>
-            <button>Ver más</button>
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/futbol.jpg" alt="Imagen evento">
+            <div class="card-body">
+              <h3>¿Que tal un partido?</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
           </div>
-        </div>
-    </section>
+
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/musica.jpg" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Musica para todos</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/tenis.png" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Tenis en el parque</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/videojuegos.jpg" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Warzone en la noche</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/baile.webp" alt="Imagen evento">
+            <div class="card-body">
+              <h3>A mover los pies</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+
+          </div>
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/anime.jpg" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Capitulos</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+
+          </div>
+          <div class="card">
+            <img src="assets/img/Imagenes_Ejem/leer.jpg" alt="Imagen evento">
+            <div class="card-body">
+              <h3>Unete al clud de lectura</h3>
+              <p>Descripción corta del evento.</p>
+              <button>Ver más</button>
+            </div>
+          </div>
+      </section>
 
 
-  </div>
+    </div>
+  </main>
 
 
   <footer>
@@ -159,7 +170,6 @@
         <a href="Error-404.html">Error 404</a>
         <a href="error.500.html">Error 500</a>
       </div>
-
   </footer>
 
 </body>
