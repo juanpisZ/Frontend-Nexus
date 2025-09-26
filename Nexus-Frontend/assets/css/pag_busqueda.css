@@ -46,6 +46,7 @@ main {
 .logo {
   height: 55px;
   width: auto;
+  cursor: pointer;
 }
 
 /* Centro */

@@ -1,7 +1,6 @@
+@import url(fuentes.css);
 
- 
- @import url(fuentes.css);
- body {
+body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -10,7 +9,8 @@
   height: 100vh;
   background: #ffffff;
 }
-*{
+
+* {
   text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 
 .avatar {
-  
+
 
   margin-bottom: 20px;
 }
@@ -33,7 +33,7 @@ form {
   background: #ffffff;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 300px;
   text-align: center;
 }
@@ -71,12 +71,12 @@ input {
   margin: 10px 0;
   color: #000000;
   text-decoration: none;
-  &:hover{
-  background-color: #d80202;
+
+  &:hover {
+    background-color: #d80202;
+  }
 }
 
-.Olvide{
+.Olvide {
   font-size: small;
 }
-    
-    

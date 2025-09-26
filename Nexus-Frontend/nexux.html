@@ -4,97 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEXUS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
   <link rel="stylesheet" href="assets/css/nexus.css">
+  <title>Nexus</title>
 </head>
 
 <body>
-  <header class="container">
-    <!-- Logo y título -->
-    <div class="left">
-      <button class="logo">
-        <img src="assets/img/Nexus logo.png" alt="nexus logo" height="50px">
-      </button>
-      <h1 class="inicio">NEXUS</h1>
+  <!-- HEADER -->
+  <header class="header-top">
+    <div class="header-left">
+      <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo de Nexus" class="logo" width="100" height="100">
+      <h1 id="titulo">Nexus</h1>
     </div>
-
-    <!-- Botones derecha -->
-    <div class="right">
-      <button class="registro">Registro</button>
-      <button class="iniciar-sesion">Iniciar sesion</button>
+    <div class="header-right">
+      <a href="index-iniciosesion.html">Iniciar Sesión</a>
+      <a href="registro-formulario.html">Registrarse</a>
     </div>
   </header>
 
-  <!-- Sección Eventos -->
-  <section>
-    <div class="titulo">
-      <h2>Eventos</h2>
-    </div>
-    <div class="contenedor_evento">
-      <div class="section_eventos">
-        <article>No te quedes atrás, comparte tus ideas y habilidades</article>
-      </div>
-      <div class="img_evento">
-        <img src="assets/img/evento.jpg" alt="evento">
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Sección Foros -->
-  <section>
-    <div class="titulo_foro">
-      <h2>Foros</h2>
-    </div>
-    <div class="contenedor_foro">
-      <div class="img_foro">
-        <img src="assets/img/foro.png" alt="foro">
-      </div>
-      <div class="section_foro">
-        <article>No te pierdas lo que los demás comparten, ¡diviértete!</article>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Sección Califica -->
-  <section>
-    <div class="contenedor_califica">
-      <div class="section_califica">
-        <article>Clasifica tus experiencias con usuarios, eventos y foros</article>
-      </div>
-      <div class="img_califica">
-        <img src="assets/img/califica.webp" alt="calificación">
-      </div>
-    </div>
-    <div class="titulo_califica">
-      <h2>Califica</h2>
-    </div>
-  </section>
-
-
-  <!-- Sección Registro / Conexión -->
-  <section>
-
-    <div class="titulo_registro">
+  <main>
+    <!-- REGISTRO -->
+    <section class="section-box">
       <h2>Regístrate o Inicia Sesión</h2>
-    </div>
-    <div class="contenedor_registro">
-      <div class="section_registro">
-        <article>
-          Prepárate para la experiencia NEXUS. ¡No dejes pasar esta oportunidad!
-        </article>
-        <div class="botones">
-          <button>Registrarse</button>
-          <button>Iniciar Sesión</button>
-        </div>
+      <article>
+        Prepárate para la experiencia NEXUS. ¡No dejes pasar esta oportunidad!
+      </article>
+      <div class="botones">
+        <button onclick="location.href='registro-formulario.html'">Registrarse</button>
+        <button onclick="location.href='index-iniciosesion.html'">Iniciar Sesión</button>
       </div>
-    </div>
-    <p class="frase">nexus es vínculo, nexus es conexión</p>
-  </section>
+      <p class="frase">Nexus es vínculo, Nexus es conexión</p>
+    </section>
 
+    <!-- EVENTOS -->
+    <section class="section-box">
+      <h2>Eventos</h2>
+      <div class="contenedor_evento">
+        <article>No te quedes atrás, comparte tus ideas y habilidades</article>
+        <img src="assets/img/evento.jpg" alt="Imagen de un evento" width="400px">
+      </div>
+    </section>
 
-</body>
+    <!-- FOROS -->
+    <section class="section-box">
+      <h2>Foros</h2>
+      <div class="contenedor_foro">
+        <article>No te pierdas lo que los demás comparten, ¡diviértete!</article>
+        <img src="assets/img/foro.png" alt="Imagen de un foro">
+      </div>
+    </section>
+
+    <!-- CALIFICA -->
+    <section class="section-box">
+      <h2>Califica</h2>
+      <div class="contenedor_califica">
+        <article>Clasifica tus experiencias con usuarios, eventos y foros</article>
+        <img src="assets/img/califica.webp" alt="Imagen de calificación">
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <p>© 2025 Nexus. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="pg_error">
+        <a href="Error-404.html">Error 404</a>
+        <a href="error.500.html">Error 500</a>
+      </div>
+  </footer>
 
 </html>
