@@ -1,7 +1,7 @@
 @import url(fuentes.css);
 
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,11 +19,9 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #111827;
-    padding: 10px 30px;
-    height: 10vh;
-    z-index: 9999;
+    height: 8vh;
+    z-index: 10;
 }
-
 
 /* Izquierda */
 .header-left {
@@ -34,10 +32,11 @@ body {
 }
 
 .logo {
+    padding-left: 20px;
     height: 55px;
     width: auto;
+    cursor: pointer;
 }
-
 
 /* Derecha */
 .header-right a {
@@ -52,13 +51,19 @@ body {
     }
 }
 
+.header-right {
+    padding-right: 20px;
+}
 
+main {
+    flex: 1;
+}
 
 #titulo {
-    font-family: sans-serif, Arial, Helvetica;
     font-size: 2.1rem;
     font-style: italic;
     font-weight: bolder;
+    margin: 0;
 }
 
 .contenedor {
@@ -98,22 +103,46 @@ h2 {
 }
 
 .acciones button {
-    background: #667eea;
+    display: inline-block;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    background-color: #111827;
+    background-repeat: no-repeat;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 25px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
+}
+
+.acciones a {
+    display: inline-block;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    background-color: #111827;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 25px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
 }
 
 .acciones button:hover {
     background: #764ba2;
 }
 
+.acciones a:hover {
+    background: #764ba2;
+}
+
+/*Footer*/
 footer {
-    width: 100vw;
+    width: 100%;
     background: #111827;
     color: #fff;
     text-align: center;
@@ -144,9 +173,33 @@ footer {
 
 .pg_error a {
     color: #F3F4F6;
-    text-decoration: none;
 }
 
 .social-icons a:hover {
     color: #b018ec;
+}
+
+@media(max-width: 920px) {
+
+    #titulo {
+        font-size: 2.0rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .header-right a {
+        align-items: center;
+        gap: 35px;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin: 10px;
+
+        &:hover {
+            color: #8B5CF6;
+        }
+    }
+
 }

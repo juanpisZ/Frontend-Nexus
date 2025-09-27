@@ -47,15 +47,15 @@ body {
 
 
 main h1 {
-  font-size: 50px;
+  font-size: 2.6rem;
   margin-top: 30px;
-  color: #000000;
+  color: #2c3e50;
 }
 
 main p {
-  font-size: 20px;
+  font-size: 1.6rem;
   margin: 10px 0 30px;
-  color: #000000;
+  color: #555;
 }
 
 main img {

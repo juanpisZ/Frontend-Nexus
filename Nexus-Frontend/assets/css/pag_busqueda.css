@@ -31,7 +31,7 @@ main {
   justify-content: space-between;
   background-color: #111827;
   padding: 0 20px;
-  height: 10vh;
+  height: 8vh;
   z-index: 10;
 }
 
@@ -110,7 +110,6 @@ main {
   height: 100vh;
   background-color: #FFFFFF;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  margin-top: 2%;
   margin-left: 0;
   padding: 20px;
 }
@@ -199,7 +198,7 @@ h3 {
   padding-left: 10px;
   padding-bottom: 40vw;
   margin-top: 10px;
-  margin-left: 20vw;
+  margin-left: 30vw;
   margin-right: 10vw;
   width: auto;
   height: auto;
@@ -340,5 +339,10 @@ footer {
   .buscador {
     width: 70%;
     justify-content: center;
+  }
+
+  .main-content {
+    margin-right: 5%;
+    padding-left: 1%;
   }
 }
