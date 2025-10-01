@@ -1,0 +1,157 @@
+@import url(fuentes.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111827;
+    height: 8vh;
+    z-index: 10;
+}
+
+/* Izquierda */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFFFFF;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+
+#titulo {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    height: 100%;
+}
+
+main h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.sub {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Grid de intereses */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card:hover {
+    border-color: #b018ec;
+}
+
+.card.active {
+    border-color: #b018ec;
+    background: #ffe5e9;
+}
+
+/* Botón */
+.btn-continuar {
+    background: #c04cee;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-continuar:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.btn-continuar:hover:enabled {
+    background: #111827;
+}
+
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #8B5CF6;
+}
+
+.pg_error {
+    margin-top: 10px;
+}
+
+.pg_error a {
+    color: #F3F4F6;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}

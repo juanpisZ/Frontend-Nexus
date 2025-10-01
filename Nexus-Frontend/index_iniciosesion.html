@@ -3,46 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>nexus</title>
+  <title>Nexus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 🔹 Responsive -->
   <link rel="stylesheet" href="assets/css/iniciosesion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
 </head>
 
 <body>
-  <h1>Iniciar Sesión</h1>
-  
-  <div class="avatar"><img src="assets/img/IconosMenuLateral/user-circle.png" alt="" width="100px"></div>
-  
-  <form>
-    <input type="text" placeholder="Usuario">
-    <input type="password" placeholder="Contraseña">
-    
-    
-    
-    <div class="botones">
-      <a type="submit" class="btn">Entrar</a>
-      <a type="submit" class="btn">Crear cuenta nueva</a>
+
+  <!-- HEADER -->
+  <header class="header-top">
+    <div class="header-left">
+      <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo Nexus" class="logo">
+      <h1 id="titulo">Nexus</h1>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Iniciar Sesión</h1>
+
+    <div class="avatar">
+      <img src="assets/img/IconosMenuLateral/user-circle.png" alt="Avatar Usuario">
     </div>
 
-    <a id="enlace" href="index recuperacion contraseña.html" class="Olvide">Olvidé Contraseña</a>
-  </form>
+    <form>
+      <input type="text" placeholder="Usuario" required>
+      <input type="password" placeholder="Contraseña" required>
+
+      <div class="botones">
+        <button type="submit" class="btn">Entrar</button>
+        <a href="registro-formulario.html" class="btn btn-alt">Crear cuenta</a>
+      </div>
+
+      <a href="index_recuperacion_contraseña.html" class="Olvide">Olvidé mi contraseña</a>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <p>© 2025 Nexus. Todos los derechos reservados.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="pg_error">
+        <a href="Error-404.html">Error 404</a> |
+        <a href="error.500.html">Error 500</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
-
-<footer>
-  <div class="footer">
-    <p>© 2025 Nexus. Todos los derechos reservados.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-
-    <div class="pg_error">
-      <a href="Error-404.html">Error 404</a>
-      <a href="error.500.html">Error 500</a>
-    </div>
-</footer>
-
 
 </html>
