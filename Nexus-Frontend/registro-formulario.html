@@ -1,18 +1,31 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Crear una cuenta</title>
+  <title>Nexus</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/registro-formulario.css">
 </head>
+
 <body>
+
+  <header class="header-top">
+    <div class="header-left">
+      <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo Nexus" class="logo" width="50" height="50">
+      <h1 id="titulo">Nexus</h1>
+    </div>
+
+  </header>
+
   <main class="container">
-    <form class="card" autocomplete="off" aria-labelledby="titulo-form">
+    <form class="card" action="dashboard.html" method="get" autocomplete="off" aria-labelledby="titulo-form">
       <h1 id="titulo-form" class="title">Crear una cuenta</h1>
 
-      <div class="row two-cols">
+      <div class="row_two-cols">
         <label class="field">
           <span class="label-text">Nombre</span>
           <input type="text" name="nombre" placeholder="Nombre" required>
@@ -24,29 +37,37 @@
         </label>
       </div>
 
-      <label class="field">
-        <span class="label-text">Apodo</span>
-        <input type="text" name="apodo" placeholder="Apodo">
-      </label>
 
       <fieldset class="fieldset">
         <legend class="legend">Fecha de nacimiento</legend>
         <div class="row three-cols">
           <label class="small-field">
-            <select id="dia" name="dia" aria-label="Día" required>
+            <select name="dia" required>
               <option value="">Día</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <!-- ...hasta 31 -->
             </select>
           </label>
 
           <label class="small-field">
-            <select id="mes" name="mes" aria-label="Mes" required>
+            <select name="mes" required>
               <option value="">Mes</option>
+              <option>Enero</option>
+              <option>Febrero</option>
+              <option>Marzo</option>
+              <!-- ... -->
             </select>
           </label>
 
           <label class="small-field">
-            <select id="ano" name="ano" aria-label="Año" required>
+            <select name="ano" required>
               <option value="">Año</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <!-- ... -->
             </select>
           </label>
         </div>
@@ -55,6 +76,7 @@
       <label class="field">
         <span class="label-text">Género</span>
         <select name="genero" required>
+          <option value="">Seleccione</option>
           <option value="masculino">Masculino</option>
           <option value="femenino">Femenino</option>
           <option value="otro">Otro</option>
@@ -76,6 +98,27 @@
     </form>
   </main>
 
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <p>© 2025 Nexus. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="pg_error">
+        <a href="Error-404.html">Error 404</a>
+        <a href="error-500.html">Error 500</a>
+      </div>
+  </footer>
+
   <script src="assets/js/scripx.js"></script>
+
+
 </body>
+
 </html>

@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/pag_busqueda.css">
+  <link rel="stylesheet" href="assets/css/pag_busqueda_foros.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
-  <title>Nexus</title>
+  <title>Nexus - Foros</title>
 </head>
 
 <body>
@@ -21,23 +21,19 @@
     <div class="header-center">
       <div class="buscador">
         <label for="search" class="sr-only"></label>
-        <input id="search" type="text" placeholder="Buscar...">
+        <input id="search" type="text" placeholder="Buscar foros...">
       </div>
     </div>
 
     <div class="header-right">
-      <!-- Icono de campana -->
       <a href=""><i class="fa-solid fa-bell"></i></a>
-      <!-- Icono de usuario -->
       <a href="perfil_usuario.html"><i class="fa-solid fa-user"></i></a>
     </div>
   </header>
 
 
   <main>
-
     <div class="container">
-
 
       <!-- Menú lateral -->
       <aside id="sidebar">
@@ -68,93 +64,77 @@
       </aside>
 
 
+
       <!-- header de sección -->
       <section class="main-content">
         <header id="header-seccion">
           <nav class="nav-seccion">
             <ul>
-              <li><a href="" class="nav">Eventos</a></li>
-              <li><a href="pag_busqueda_foros.html" class="nav">Foros</a></li>
+              <li><a href="pag_busqueda.html" class="nav">Eventos</a></li>
+              <li><a href="pag_busqueda_foros.html" class="nav active">Foros</a></li>
             </ul>
           </nav>
         </header>
 
-        <!-- Contenido principal -->
+        <!-- Contenido principal: Foros recomendados -->
         <div class="cards-container">
+
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/juego_mesa.webp" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/anime.jpg" alt="Foro anime">
             <div class="card-body">
-              <h3>Juegos de Mesa</h3>
-              <p>Comparte con más gente </p>
-              <button>Ver más</button>
+              <h3>Foro Anime</h3>
+              <p>Comparte y discute tus series favoritas.</p>
+              <button>Ver foro</button>
             </div>
           </div>
 
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/futbol.jpg" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/videojuegos.jpg" alt="Foro videojuegos">
             <div class="card-body">
-              <h3>¿Que tal un partido?</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
+              <h3>Foro Videojuegos</h3>
+              <p>Noticias, debates y quedadas gamers.</p>
+              <button>Ver foro</button>
             </div>
           </div>
 
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/musica.jpg" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/leer.jpg" alt="Foro lectura">
             <div class="card-body">
-              <h3>Musica para todos</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
+              <h3>Foro Lectura</h3>
+              <p>Comparte libros y organiza lecturas conjuntas.</p>
+              <button>Ver foro</button>
             </div>
           </div>
 
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/tenis.png" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/musica.jpg" alt="Foro música">
             <div class="card-body">
-              <h3>Tenis en el parque</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
+              <h3>Foro Música</h3>
+              <p>Descubre y recomienda nuevos artistas.</p>
+              <button>Ver foro</button>
             </div>
           </div>
 
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/videojuegos.jpg" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/futbol.jpg" alt="Foro deportes">
             <div class="card-body">
-              <h3>Warzone en la noche</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
+              <h3>Foro Deportes</h3>
+              <p>Charlas, estrategias y encuentros deportivos.</p>
+              <button>Ver foro</button>
             </div>
           </div>
 
           <div class="card">
-            <img src="assets/img/Imagenes_Ejem/baile.webp" alt="Imagen evento">
+            <img src="assets/img/Imagenes_Ejem/baile.webp" alt="Foro baile">
             <div class="card-body">
-              <h3>A mover los pies</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
+              <h3>Foro Baile</h3>
+              <p>Comparte estilos y organiza talleres.</p>
+              <button>Ver foro</button>
             </div>
+          </div>
 
-          </div>
-          <div class="card">
-            <img src="assets/img/Imagenes_Ejem/anime.jpg" alt="Imagen evento">
-            <div class="card-body">
-              <h3>Capitulos</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
-            </div>
-
-          </div>
-          <div class="card">
-            <img src="assets/img/Imagenes_Ejem/leer.jpg" alt="Imagen evento">
-            <div class="card-body">
-              <h3>Unete al clud de lectura</h3>
-              <p>Descripción corta del evento.</p>
-              <button>Ver más</button>
-            </div>
-          </div>
+        </div>
       </section>
-
-
     </div>
   </main>
 
@@ -173,6 +153,7 @@
         <a href="Error-404.html">Error 404</a>
         <a href="error.500.html">Error 500</a>
       </div>
+    </div>
   </footer>
 
 </body>
