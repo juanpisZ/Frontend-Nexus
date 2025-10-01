@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Foro - Nexus</title>
+    <link rel="stylesheet" href="assets/css/crear_evento.css"> <!-- Usamos mismo CSS -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-top">
+        <div class="header-left">
+            <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo Nexus" class="logo" width="50" height="50">
+            <h1 id="titulo">Nexus</h1>
+        </div>
+
+        <div class="header-right">
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <a href="perfil_usuario.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="menu-lateral">
+            <div class="menu-header">
+                <h3>Nombre de Usuario</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fa-solid fa-gauge"></i> <span class="texto">Dashboard</span></a></li>
+                    <li><a href="perfil_usuario.html"><i class="fa-solid fa-user"></i> <span class="texto">Perfil</span></a></li>
+                    <li><a href="crear_evento.html"><i class="fa-solid fa-plus"></i><span class="texto">Crear Evento</span></a></li>
+                    <li><a href="pag_busqueda.html"><i class="fa-solid fa-calendar-days"></i> <span class="texto">Mis Eventos</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-plus"></i> <span class="texto">Invitaciones</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-check-double"></i><span class="texto">Eventos Asistidos</span></a></li>
+                    <li><a href="pag_busqueda_foros.html"><i class="fa-solid fa-users"></i><span class="texto">Mis Foros</span></a></li>
+                    <li><a href="crear_foro.html"><i class="fa-solid fa-comments"></i> <span class="texto">Crear Foro</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <form class="card" action="dashboard.html" method="post">
+            <h1 class="title">Crear Foro</h1>
+
+            <!-- Título -->
+            <label class="field">
+                <span class="label-text">Título del Foro</span>
+                <input type="text" name="titulo_foro" placeholder="Ej: Foro de Programación" required>
+            </label>
+
+            <!-- Descripción -->
+            <label class="field">
+                <span class="label-text">Descripción</span>
+                <textarea name="descripcion" rows="3" placeholder="Agrega detalles sobre el foro" required></textarea>
+            </label>
+
+            <!-- Categorías -->
+            <label class="field">
+                <span class="label-text">Categorías</span>
+                <input type="text" name="categorias" placeholder="Ej: Tecnología, Música, Arte">
+            </label>
+
+            <!-- Opciones -->
+            <fieldset class="fieldset">
+                <legend class="legend">Opciones</legend>
+                <label><input type="checkbox" name="mostrar_invitados"> Mostrar lista de invitados</label><br>
+                <label><input type="checkbox" name="aprobar_solicitudes"> Aprobar solicitudes de participación</label>
+            </fieldset>
+
+            <!-- Botones -->
+            <div class="btn-group">
+                <button type="submit" class="btn">Crear Foro</button>
+                <button type="reset" class="btn btn-alt">Cancelar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© 2025 Nexus. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="pg_error">
+                <a href="Error-404.html">Error 404</a>
+                <a href="error.500.html">Error 500</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
