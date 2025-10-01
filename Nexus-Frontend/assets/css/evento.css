@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111827;
+    padding: 0 20px;
+    height: 8vh;
+    z-index: 10;
+}
+
+/* Izquierda */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFFFFF;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Centro */
+.header-center {
+    flex: 1;
+    /* Ocupa espacio para centrar */
+    display: flex;
+    justify-content: center;
+}
+
+.buscador {
+    width: 80%;
+    justify-content: center;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-left: 60px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.buscador input:focus {
+    border: 2px solid #8B5CF6;
+    /* Verde */
+}
+
+/* Derecha */
+.header-right a {
+    align-items: center;
+    gap: 35px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin: 10px;
+
+    &:hover {
+        color: #8B5CF6;
+    }
+}
+
+
+
+#titulo {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+
+
+/*menu lateral*/
+#sidebar {
+    position: fixed;
+    top: 6%;
+    width: 20vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    padding: 20px;
+}
+
+.menu-lateral ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.menu-lateral li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-lateral li:hover {
+    transform: scale(0.9);
+}
+
+li a:hover {
+    color: #a480f7;
+    text-decoration: none;
+    display: block;
+}
+
+
+.menu-header {
+    padding: 10px;
+    margin-left: 0;
+    background-color: transparent;
+}
+
+h3 {
+
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    height: 100vh;
+}
+
+.evento-container {
+    flex: 1;
+    width: 70%;
+    height: 100vh;
+    margin: 20px 30% 40px 25%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.evento-header {
+    position: relative;
+}
+
+.evento-banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.evento-info {
+    padding: 20px;
+}
+
+.evento-actions {
+    margin-top: 10px;
+}
+
+.btn {
+    background: #111827;
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    margin-right: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    background: #64748b;
+}
+
+.evento-detalles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.detalle-card {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.multimedia i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #475569;
+}
+
+
+/*Footer*/
+footer {
+    background: #111827;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.pg_error {
+    margin-top: 10px;
+}
+
+.pg_error a {
+    color: #F3F4F6;
+}
+
+.social-icons a:hover {
+    color: #b018ec;
+}
+
+
+
+@media(max-width: 800px) {
+    #sidebar h3 {
+        display: none;
+    }
+
+    #sidebar .texto {
+        display: none;
+    }
+
+    #sidebar {
+        width: auto;
+    }
+
+    #sidebar li a:hover {
+        scale: 1.1;
+    }
+
+    #titulo {
+        font-size: 2.0rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .header-right a {
+        align-items: center;
+        gap: 35px;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin: 10px;
+
+        &:hover {
+            color: #8B5CF6;
+        }
+    }
+
+    .buscador {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-right: 5%;
+        padding-left: 1%;
+    }
+
+    .buscador input {
+        margin-left: -5%;
+    }
+
+    .evento-container {
+        width: 70%;
+        margin: 20px auto 40px 20%;
+        padding: 20px 20px;
+        height: auto;
+    }
+
+    .evento-detalles {
+        grid-template-columns: 1fr;
+    }
+}

@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Detalle Evento - Nexus</title>
+    <link rel="stylesheet" href="assets/css/evento.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
-    <title>Nexus</title>
 </head>
 
 <body>
@@ -19,18 +18,23 @@
 
         <div class="header-center">
             <div class="buscador">
+                <label for="search" class="sr-only"></label>
                 <input id="search" type="text" placeholder="Buscar...">
             </div>
         </div>
 
         <div class="header-right">
+            <!-- Icono de campana -->
             <a href=""><i class="fa-solid fa-bell"></i></a>
+            <!-- Icono de usuario -->
             <a href="perfil_usuario.html"><i class="fa-solid fa-user"></i></a>
         </div>
     </header>
 
+    <!-- Menú lateral -->
     <aside id="sidebar">
         <div class="menu-lateral">
+
             <div class="menu-header">
                 <h3>Nombre de Usuario</h3>
             </div>
@@ -38,17 +42,20 @@
             <nav>
                 <ul>
                     <li><a href="dashboard.html"><i class="fa-solid fa-gauge"></i> <span class="texto">Dashboard
-                            </span></a></li>
-                    <li><a href="perfil_usuario.html"><i class="fa-solid fa-user"></i> <span
-                                class="texto">Perfil</span></a></li>
+                            </span></a>
+                    </li>
+                    <li><a href="perfil_usuario.html"><i class="fa-solid fa-user"></i> <span class="texto">Perfil
+                            </span></a>
+                    </li>
                     <li><a href="crear_evento.html"><i class="fa-solid fa-plus"></i><span class="texto">Crear Evento
                             </span></a></li>
                     <li><a href="pag_busqueda.html"><i class="fa-solid fa-calendar-days"></i> <span class="texto">Mis
-                                Eventos </span></a>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-plus"></i> <span class="texto">Invitaciones </span></a></li>
-                    <li><a href=""><i class="fa-solid fa-check-double"></i><span class="texto">Eventos Asistidos
+                                Eventos
                             </span></a></li>
+                    <li><a href=""><i class="fa-solid fa-plus"></i> <span class="texto">Invitaciones </span></a></li>
+                    <li><a href=""><i class="fa-solid fa-check-double"></i><span class="texto">Eventos Asistidos </span>
+                        </a>
+                    </li>
                     <li><a href="pag_busqueda_foros.html"><i class="fa-solid fa-users"></i><span class="texto">Mis Foros
                             </span></a></li>
                     <li><a href="crear_foro.html"><i class="fa-solid fa-comments"></i> <span class="texto">Crear Foro
@@ -58,44 +65,47 @@
         </div>
     </aside>
 
-    <!-- Main content -->
-    <div class="main">
-        <h1>Bienvenido, Usuario </h1>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Tu Comunidad</h3>
-                <p>Encuentra personas con tus mismos intereses.</p>
-            </div>
-
-            <div class="card">
-                <h3>Foros Recomendados</h3>
-                <ul class="listado">
-                    <li><a href="foro_musica.html">🎵 Foro de Música</a></li>
-                    <li><a href="foro_programacion.html">💻 Foro de Programación</a></li>
-                    <li><a href="foro_arte.html">🎨 Foro de Arte Digital</a></li>
-                </ul>
-
-            </div>
-
-            <div class="card">
-                <h3>Eventos Recomendados</h3>
-                <ul class="listado">
-                    <li><a href="evento_musical.html">🎶 Concierto Indie - Bogotá</a></li>
-                    <li><a href="evento_dev.html">👨‍💻 Hackathon de Programación</a></li>
-                    <li><a href="evento_arte.html">🖌️ Taller de Arte Digital</a></li>
-                </ul>
-                <!-- ⭐ Calificación de eventos -->
-
-            </div>
-
-            <div class="card">
-                <h3>Notificaciones</h3>
-                <p>Tienes 3 invitaciones nuevas a grupos.</p>
+    <main class="evento-container">
+        <!-- Imagen principal -->
+        <div class="evento-header">
+            <img src="assets/img/Imagenes_Ejem/musica.jpg" alt="Imagen del evento" class="evento-banner">
+            <div class="evento-info">
+                <h2>Título del Evento</h2>
+                <p>Creado por <strong>Usuario</strong></p>
+                <p>📅 12 Oct 2025 - 18:00 a 21:00</p>
+                <div class="evento-actions">
+                    <button class="btn"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                    <button class="btn">Asistir</button>
+                    <button class="btn btn-alt">Compartir</button>
+                </div>
             </div>
         </div>
 
-    </div>
+        <!-- Detalles -->
+        <section class="evento-detalles">
+            <div class="detalle-card">
+                <h3>Detalles</h3>
+                <p><strong>Ubicación:</strong> Parque Central</p>
+                <p><strong>Descripción:</strong> Ven y disfruta de una tarde llena de música en vivo.</p>
+                <div class="multimedia">
+                    <i class="fa-solid fa-image"></i>
+                    <i class="fa-solid fa-video"></i>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="detalle-card">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Ubicación</h3>
+                <p>Ver mapa</p>
+            </div>
+
+            <!-- Asistentes -->
+            <div class="detalle-card">
+                <h3>Asistentes</h3>
+                <p><strong>10 confirmados</strong></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer">
@@ -106,12 +116,14 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+
             <div class="pg_error">
                 <a href="Error-404.html">Error 404</a>
                 <a href="error.500.html">Error 500</a>
             </div>
-        </div>
     </footer>
+
+
 </body>
 
 </html>
