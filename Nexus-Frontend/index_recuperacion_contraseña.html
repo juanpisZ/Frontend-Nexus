@@ -3,25 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Recuperar Contraseña</title>
+  <title>Nexus - Recuperar Contraseña</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/Nexus_logo-removebg-preview.png">
   <link rel="stylesheet" href="assets/css/recuperarcontraseña.css">
-
-
 </head>
 
 <body>
-  <h1>NEXUS</h1>
-  <div class="lock"><img src="assets/img/lock (1).png" alt="" width="100px"></div>
-  <form>
-    <input type="email" placeholder="Correo Electrónico">
-    <input type="text" placeholder="Código">
-    <a href="#">Volver a enviar código</a>
-    <div>
-      <a href="index iniciosesion.html"><button type="button" class="btn cancel">Cancelar</button>
-      </a>
-      <button type="submit" class="btn verify">Verificar</button>
+
+  <!-- HEADER -->
+  <header class="header-top">
+    <div class="header-left">
+      <img src="assets/img/Nexus_logo-removebg-preview.png" alt="Logo Nexus" class="logo" width="50" height="50">
+      <h1 id="titulo">Nexus</h1>
     </div>
-  </form>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Recuperar Contraseña</h1>
+    <div class="lock">
+      <img src="assets/img/lock (1).png" alt="candado" width="100px">
+    </div>
+
+    <form action="index-iniciosesion.html" method="post">
+      <input type="email" placeholder="Correo Electrónico" required>
+      <input type="text" placeholder="Código" required>
+      <a href="#">Volver a enviar código</a>
+
+      <div class="btn-group">
+        <!-- Cancelar redirige directamente -->
+        <a href="index_iniciosesion.html" class="btn cancel">Cancelar</a>
+
+        <!-- Verificar procesa el formulario -->
+        <a href="index_iniciosesion.html" class="btn verify">Verificar</a>
+      </div>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <p>© 2025 Nexus. Todos los derechos reservados.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="pg_error">
+        <a href="Error-404.html">Error 404</a>
+        <a href="error-500.html">Error 500</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
